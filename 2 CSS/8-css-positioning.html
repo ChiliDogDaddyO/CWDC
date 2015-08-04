@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+    <title>Learning CSS</title>
+    <!--  http://html-color-codes.info -->
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+
+        .large {
+            font-size: 200%;
+        }
+
+        #green {
+            color:green;
+        }
+
+        .underline {
+            text-decoration: underline;
+        }
+        
+        .purplebox {
+          /* when you use *absolute* positioning, everything else will flow as normal
+             and ignore that attribute
+             
+             *fixed* positioning is good for "header bars w/menus"
+          */
+          background-color:#8404AE;
+          width: 200px;
+          height: 200px;
+          left: 100px;
+          top: 50px;
+          z-index:1;
+          margin:50px 100px 30px 10px;
+          padding: 25px;
+        }
+        
+        .greenbox {
+          background-color:#295715;
+          width: 300px;
+          height: 200px;
+          /*position:absolute;*/
+          z-index:2;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="purplebox">
+      <p class="large">This is some text</p>
+     
+    </div>
+
+    <div class="greenbox">
+      <p id="green" class="large">This is some more text</p>
+    </div>
+    
+    <p>The third <span class="underline large">word</span> in this paragraph is underlined.</p>
+</body>
+</html>
